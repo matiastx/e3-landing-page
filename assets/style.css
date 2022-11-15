@@ -75,8 +75,11 @@ header {
   font-family: "Kaushan Script", cursive;
 }
 
-.navbar-list li:first-child > a {
-  color: var(--safety-orange);
+.navbar-list a:hover {
+  font-size: 35px;
+  font-weight: 400;
+  color: var(--azure);
+  transition: 0.2s;
 }
 
 .navbar-info {
@@ -104,14 +107,21 @@ header {
   cursor: default;
 }
 
-.cont-icons {
+.list-icons-c {
   display: flex;
   gap: 5px;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo-c {
   width: 45px;
   cursor: pointer;
+}
+
+.logo-c:hover {
+  width: 60px;
+  transition: 0.2s;
 }
 
 .carro {
@@ -124,6 +134,12 @@ header {
     rgba(26, 60, 52, 1) 100%
   );
   cursor: pointer;
+}
+
+.carro:hover {
+  padding: 20px 25px;
+  background: var(--azure);
+  transition: 0.2s;
 }
 
 body {
@@ -249,9 +265,15 @@ body {
 
 .menu-toggle img {
   position: relative;
-
+  cursor: pointer;
   width: 40px;
   height: 40px;
+}
+
+.menu-toggle img:hover {
+  width: 50px;
+  height: 50px;
+  transition: 0.2s;
 }
 
 .menu-toggle input {

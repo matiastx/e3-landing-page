@@ -33,6 +33,7 @@
 
   .menu-toggle {
     display: flex;
+    cursor: pointer;
   }
 }
 
