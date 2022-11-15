@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
     <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/mediaqueries.css" />
   </head>
   <body>
     <header>
@@ -17,9 +18,9 @@
           <li><a href="#">Delivery</a></li>
           <li><a href="#">Clientes</a></li>
         </ul>
-        <div class="navbar-info-comp">
+        <div class="navbar-info">
           <div class="nv-contacto">
-            <p>Contactanos</p>
+            <!-- <p>Contactanos</p> -->
             <div class="cont-icons">
               <img
                 class="logo-c"
@@ -38,7 +39,14 @@
               />
             </div>
           </div>
-          <img class="carro" src="./assets/img/cart-icon.svg" alt="Carrito" />
+        </div>
+        <img class="carro" src="./assets/img/cart-icon.svg" alt="Carrito" />
+        <!-- ☰ -->
+        <div class="menu-toggle">
+          <label for="menu-h">
+            <img src="./assets/img/MenuH-vector.PNG" alt="menu" />
+          </label>
+          <input type="checkbox" id="menu-h" />
         </div>
       </nav>
     </header>

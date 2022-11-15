@@ -33,17 +33,19 @@
   text-decoration: none;
   list-style: none;
   font-family: "Poppins", sans-serif;
-  border: solid 1px blue;
+  /* border: solid 1px blue; */
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
-  background-color: var(--ghost-white);
+  padding: 10px;
+  background: linear-gradient(to top, var(--ghost-white), var(--bg-page));
+  /* background-color: var(--ghost-white); */
   height: 80px;
   width: 100%;
+  border-bottom: solid 1px var(--bg-page);
 }
 
 .logo {
@@ -55,7 +57,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
   height: 80px;
 }
 
@@ -77,7 +79,7 @@ header {
   color: var(--safety-orange);
 }
 
-.navbar-info-comp {
+.navbar-info {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -235,4 +237,23 @@ body {
   font-weight: 380;
   font-family: "Oswald", sans-serif;
   color: var(--onyx);
+}
+
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70px;
+  display: none;
+}
+
+.menu-toggle img {
+  position: relative;
+
+  width: 40px;
+  height: 40px;
+}
+
+.menu-toggle input {
+  display: none;
 }
