@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Comforter&family=Dancing+Script:wght@400;700&family=Kaushan+Script&family=Oswald:wght@200;400&family=Passion+One&family=Poppins:wght@300;700&family=Signika+Negative&display=swap");
+
+:root {
+  /* Colores Varios */
+  --ivory: #f6f7ebff;
+  --cinnabar: #e94f37ff;
+  --safety-orange: #ff7700ff;
+  --onyx: #393e41ff;
+  --silver: rgb(109, 109, 109);
+  --jet: #2a2b2aff;
+  --battleship-grey: #79807aff;
+  --red-pigment: #ff0022ff;
+  --lavender-blush: #eee5e9ff;
+  --iris: #454adeff;
+  --azure: #0f7fe1ff;
+  --brown-ups: #5a4004ff;
+  --ghost-white: #fafaffff;
+  --titulo: #29453f;
+  /* Background de Marcas */
+  --bg-quilmes: #20355b;
+  --bg-Brahma: #df0e20;
+  --bg-bud: #cc0427;
+  --bg-ao: #e8e6d2;
+  --bg-patagonia: #1a3c34;
+  /* Bacground */
+  --bg-page: #f1f1f1;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  border: solid 1px blue;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  background-color: var(--ghost-white);
+  height: 80px;
+  width: 100%;
+}
+
+.logo {
+  width: 78px;
+  margin: 0 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  height: 80px;
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-list a {
+  font-size: 30px;
+  font-weight: 300;
+  color: var(--bg-patagonia);
+  font-family: "Kaushan Script", cursive;
+}
+
+.navbar-list li:first-child > a {
+  color: var(--safety-orange);
+}
+
+.navbar-info-comp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  height: 78px;
+}
+
+.nv-contacto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2px;
+  height: 80px;
+}
+
+.nv-contacto p {
+  font-family: "Passion One", cursive;
+  font-size: 20px;
+  font-weight: 200;
+  color: var(--bg-patagonia);
+  cursor: default;
+}
+
+.cont-icons {
+  display: flex;
+  gap: 5px;
+}
+
+.logo-c {
+  width: 45px;
+  cursor: pointer;
+}
+
+.carro {
+  margin: 0 10px 0 15px;
+  padding: 15px 20px;
+  border-radius: 5px;
+  background: radial-gradient(
+    circle,
+    rgb(21, 69, 103) 50%,
+    rgba(26, 60, 52, 1) 100%
+  );
+  cursor: pointer;
+}
+
+body {
+  background: var(--ghost-white);
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.h-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-page);
+  border-radius: 1rem;
+  gap: 10px;
+  justify-content: space-around;
+  margin: 1rem;
+  align-items: center;
+}
+
+.h-card-img {
+  margin: 1rem;
+  width: 60%;
+  background: var(--bg-page);
+  border-radius: 1rem;
+}
+
+.card-marcas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.h-card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.h-card-info p {
+  color: var(--onyx);
+  font-family: "Kaushan Script", cursive;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.caja-marca {
+  width: 60px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.br {
+  background: var(--bg-Brahma);
+}
+
+.qui {
+  background: var(--bg-quilmes);
+}
+
+.bud {
+  background: var(--bg-bud);
+}
+
+.ao {
+  background: var(--bg-ao);
+}
+
+.sa {
+  background: whitesmoke;
+}
+
+.cor {
+  background-image: url(./img/BG/BG-Corona.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.pat {
+  background: var(--bg-patagonia);
+}
+
+.h-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  text-align: center;
+  width: 75%;
+}
+
+.h-info h1 {
+  font-size: 3.8rem;
+  font-weight: 800;
+  font-family: "Kaushan Script", cursive;
+  color: var(--titulo);
+}
+
+.h-info p {
+  font-size: 1.5rem;
+  font-weight: 380;
+  font-family: "Oswald", sans-serif;
+  color: var(--onyx);
+}
