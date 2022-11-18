@@ -35,6 +35,10 @@
     display: flex;
     cursor: pointer;
   }
+
+  #menu-h ~ .navbar-list {
+    display: flex;
+  }
 }
 
 @media (max-width: 520px) {
