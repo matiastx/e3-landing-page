@@ -36,6 +36,11 @@
   /* border: solid 1px blue; */
 }
 
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
 .logo {
   width: 78px;
   margin: 0 20px;
@@ -272,4 +277,142 @@ body {
   font-weight: 380;
   font-family: "Oswald", sans-serif;
   color: var(--onyx);
+}
+
+#catalogo {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  justify-content: center;
+  margin: 40px auto;
+  padding: 1rem 0;
+}
+
+#catalogo h2 {
+  text-align: center;
+  font-size: 35px;
+  color: var(--titulo);
+  font-family: "Kaushan Script";
+  font-weight: 450;
+}
+
+.c-cards {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  height: 235px;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.c-cards:hover {
+  width: 160px;
+  transition: 0.2s;
+}
+
+.c-cards-container {
+  flex-direction: row;
+  gap: 15px;
+  padding: 15px 0;
+  flex-wrap: wrap;
+  background: linear-gradient(to top, var(--ghost-white), var(--bg-page));
+  width: 100%;
+  border-bottom: solid 1px var(--bg-page);
+  border-radius: 1rem;
+}
+
+.p-cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px 0;
+  flex-wrap: wrap;
+  background: linear-gradient(to top, var(--ghost-white), var(--bg-page));
+  width: 100%;
+  border-bottom: solid 1px var(--bg-page);
+  border-radius: 1rem;
+}
+
+.p-cards-logo {
+  display: flex;
+  height: 130px;
+}
+
+.p-cards-img {
+  display: flex;
+  height: 300px;
+  border-radius: 10px;
+  background: var(--bg-page);
+}
+
+.p-cards {
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  height: 600px;
+  border-radius: 10px;
+  padding: 10px;
+  gap: 5px;
+}
+
+.p-card-desc,
+.p-cards-price {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+
+.p-card-desc {
+  width: 65%;
+}
+
+.p-card-desc h3 {
+  color: var(--bg-page);
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+.p-card-desc span {
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  height: 3px;
+  width: 90%;
+}
+
+.p-card-desc p {
+  color: var(--bg-page);
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+}
+
+.p-cards-price {
+  gap: 5px;
+}
+.p-cards-price img {
+  border: var(--bg-page) solid 2px;
+  border-radius: 1rem;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.p-cards-price img:hover {
+  background: var(--azure);
+  transition: 0.2s;
+}
+
+.p-cards-price span {
+  background: var(--onyx);
+  border-radius: 1rem;
+  border: rgb(158, 156, 156) solid 1px;
+  padding: 5px 15px;
+  color: var(--bg-page);
+  font-weight: 600;
+  font-size: 22px;
+  font-family: "Oswald", sans-serif;
 }

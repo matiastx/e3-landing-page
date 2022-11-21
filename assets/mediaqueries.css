@@ -33,10 +33,12 @@
     border: solid 1px var(--bg-page);
     border-top: none;
     display: none;
+    transition: 0.2s;
   }
 
   #menu-toggle:checked ~ .navbar-list {
     display: flex;
+    transition: 0.2s;
   }
 }
 
