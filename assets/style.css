@@ -295,14 +295,22 @@ body {
 .c-cards {
   display: flex;
   flex-direction: column;
-  width: 150px;
+  width: 160px;
   height: 235px;
   justify-content: center;
   border-radius: 10px;
+  padding: 5px;
+}
+
+.c-cards label {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
 }
 
 .c-cards:hover {
-  width: 160px;
+  border: solid 4px var(--azure);
   transition: 0.2s;
 }
 
@@ -500,4 +508,52 @@ footer p {
   font-size: 26px;
   font-weight: 600;
   padding: 10px 0;
+}
+
+#m-qui,
+#m-bra,
+#m-bud,
+#m-ao,
+#m-sa,
+#m-cor,
+#m-pat {
+  display: none;
+}
+
+.v-qui,
+.v-bra,
+.v-bud,
+.v-ao,
+.v-sa,
+.v-cor,
+.v-pat {
+  display: none;
+}
+
+#m-qui:checked ~ .v-qui {
+  display: flex;
+}
+
+#m-bra:checked ~ .v-bra {
+  display: flex;
+}
+
+#m-bud:checked ~ .v-bud {
+  display: flex;
+}
+
+#m-ao:checked ~ .v-ao {
+  display: flex;
+}
+
+#m-sa:checked ~ .v-sa {
+  display: flex;
+}
+
+#m-cor:checked ~ .v-cor {
+  display: flex;
+}
+
+#m-pat:checked ~ .v-pat {
+  display: flex;
 }

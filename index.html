@@ -82,49 +82,65 @@
     </section>
 
     <section id="catalogo">
+      <!-- CATALOGO DE MARCAS -->
       <h2>Nuestro catalago de Productos por Marca</h2>
       <div class="c-cards-container flex">
-        <div class="c-cards br">
-          <img class="br" src="./assets/img/Marcas/Brahma.png" alt="Brahma" />
+        <div class="c-cards br c-b">
+          <label for="m-bra"
+            ><img class="br" src="./assets/img/Marcas/Brahma.png" alt="Brahma"
+          /></label>
         </div>
         <div class="c-cards qui c-q">
-          <img
-            class="qui"
-            src="./assets/img/Marcas/Quilmes.png"
-            alt="Quilmes"
-          />
+          <label for="m-qui"
+            ><img
+              class="qui"
+              src="./assets/img/Marcas/Quilmes.png"
+              alt="Quilmes"
+          /></label>
         </div>
         <div class="c-cards bud c-b">
-          <img class="bud" src="./assets/img/Marcas/Bud.png" alt="Budweiser" />
+          <label for="m-bud"
+            ><img class="bud" src="./assets/img/Marcas/Bud.png" alt="Budweiser"
+          /></label>
         </div>
         <div class="c-cards ao c-a">
-          <img class="ao" src="./assets/img/Marcas/AO.png" alt="Andes Origen" />
+          <label for="m-ao"
+            ><img
+              class="ao"
+              src="./assets/img/Marcas/AO.png"
+              alt="Andes Origen"
+          /></label>
         </div>
         <div class="c-cards sa c-s">
-          <img
-            class="sa"
-            src="./assets/img/Marcas/Stella.png"
-            alt="Stella Artois"
-          />
+          <label for="m-sa"
+            ><img
+              class="sa"
+              src="./assets/img/Marcas/Stella.png"
+              alt="Stella Artois"
+          /></label>
         </div>
         <div class="c-cards cor c-c">
-          <img class="cor" src="./assets/img/Marcas/Corona.png" alt="Corona" />
+          <label for="m-cor"
+            ><img class="cor" src="./assets/img/Marcas/Corona.png" alt="Corona"
+          /></label>
         </div>
         <div class="c-cards pat c-p">
-          <img
-            class="pat"
-            src="./assets/img/Marcas/Patagonia.png"
-            alt="Patagonia"
-          />
+          <label for="m-pat"
+            ><img
+              class="pat"
+              src="./assets/img/Marcas/Patagonia.png"
+              alt="Patagonia"
+          /></label>
         </div>
       </div>
-      <h2>Productos</h2>
+      <h2>Click en las Marcas para ver sus Productos</h2>
       <!-- Contenedor de Productos -->
       <div class="p-cards-container flex">
         <!-- Inicio de productos -->
         <!-- INICIO QUILMES -->
+        <input type="checkbox" id="m-qui" />
         <!-- Producto 1 -->
-        <div class="p-cards flex qui">
+        <div class="p-cards flex qui v-qui">
           <img
             class="p-cards-logo"
             src="./assets/img/Marcas/Quilmes.png"
@@ -149,7 +165,7 @@
           </div>
         </div>
         <!-- Producto 2 -->
-        <div class="p-cards flex qui">
+        <div class="p-cards flex qui v-qui">
           <img
             class="p-cards-logo"
             src="./assets/img/Marcas/Quilmes.png"
@@ -174,7 +190,7 @@
           </div>
         </div>
         <!-- Producto 3 -->
-        <div class="p-cards flex qui">
+        <div class="p-cards flex qui v-qui">
           <img
             class="p-cards-logo"
             src="./assets/img/Marcas/Quilmes.png"
@@ -201,7 +217,7 @@
           </div>
         </div>
         <!-- Producto 4 -->
-        <div class="p-cards flex qui">
+        <div class="p-cards flex qui v-qui">
           <img
             class="p-cards-logo"
             src="./assets/img/Marcas/Quilmes.png"
@@ -226,8 +242,9 @@
           </div>
         </div>
         <!-- INICIO BRAHMA -->
+        <input type="checkbox" id="m-bra" />
         <!-- Producto 5 -->
-        <div class="p-cards flex br">
+        <div class="p-cards flex br v-bra">
           <img
             class="p-cards-logo"
             src="./assets/img/Marcas/Brahma.png"
@@ -252,7 +269,7 @@
           </div>
         </div>
         <!-- Producto 6 -->
-        <div class="p-cards flex br">
+        <div class="p-cards flex br v-bra">
           <img
             class="p-cards-logo"
             src="./assets/img/Marcas/Brahma.png"
@@ -277,7 +294,7 @@
           </div>
         </div>
         <!-- Producto 7 -->
-        <div class="p-cards flex br">
+        <div class="p-cards flex br v-bra">
           <img
             class="p-cards-logo"
             src="./assets/img/Marcas/Brahma.png"
@@ -302,7 +319,7 @@
           </div>
         </div>
         <!-- Producto 8 -->
-        <div class="p-cards flex br">
+        <div class="p-cards flex br v-bra">
           <img
             class="p-cards-logo"
             src="./assets/img/Marcas/Brahma.png"
@@ -327,7 +344,7 @@
           </div>
         </div>
         <!-- Producto 9 -->
-        <div class="p-cards flex br">
+        <div class="p-cards flex br v-bra">
           <img
             class="p-cards-logo"
             src="./assets/img/Marcas/Brahma.png"
@@ -352,7 +369,7 @@
           </div>
         </div>
         <!-- Producto 10 -->
-        <div class="p-cards flex br">
+        <div class="p-cards flex br v-bra">
           <img
             class="p-cards-logo"
             src="./assets/img/Marcas/Brahma.png"
@@ -377,8 +394,9 @@
           </div>
         </div>
         <!-- INICIO BUDWEISER -->
+        <input type="checkbox" id="m-bud" />
         <!-- Producto 11 -->
-        <div class="p-cards flex bud">
+        <div class="p-cards flex bud v-bud">
           <img
             class="p-cards-logo"
             src="./assets/img/Marcas/Bud.png"
@@ -403,7 +421,7 @@
           </div>
         </div>
         <!-- Producto 12 -->
-        <div class="p-cards flex bud">
+        <div class="p-cards flex bud v-bud">
           <img
             class="p-cards-logo"
             src="./assets/img/Marcas/Bud.png"
@@ -428,7 +446,7 @@
           </div>
         </div>
         <!-- Producto 13 -->
-        <div class="p-cards flex bud">
+        <div class="p-cards flex bud v-bud">
           <img
             class="p-cards-logo"
             src="./assets/img/Marcas/Bud.png"
@@ -453,7 +471,7 @@
           </div>
         </div>
         <!-- Producto 14 -->
-        <div class="p-cards flex bud">
+        <div class="p-cards flex bud v-bud">
           <img
             class="p-cards-logo"
             src="./assets/img/Marcas/Bud.png"
@@ -478,7 +496,7 @@
           </div>
         </div>
         <!-- Producto 15 -->
-        <div class="p-cards flex bud">
+        <div class="p-cards flex bud v-bud">
           <img
             class="p-cards-logo"
             src="./assets/img/Marcas/Bud.png"
@@ -503,8 +521,9 @@
           </div>
         </div>
         <!-- INICIO ANDES ORIGEN -->
+        <input type="checkbox" id="m-ao" />
         <!-- Producto 16 -->
-        <div class="p-cards flex ao">
+        <div class="p-cards flex ao v-ao">
           <img
             class="p-cards-logo-ao"
             src="./assets/img/Marcas/AO.png"
@@ -529,7 +548,7 @@
           </div>
         </div>
         <!-- Producto 17 -->
-        <div class="p-cards flex ao">
+        <div class="p-cards flex ao v-ao">
           <img
             class="p-cards-logo-ao"
             src="./assets/img/Marcas/AO.png"
@@ -554,7 +573,7 @@
           </div>
         </div>
         <!-- Producto 18 -->
-        <div class="p-cards flex ao">
+        <div class="p-cards flex ao v-ao">
           <img
             class="p-cards-logo-ao"
             src="./assets/img/Marcas/AO.png"
@@ -579,7 +598,7 @@
           </div>
         </div>
         <!-- Producto 19 -->
-        <div class="p-cards flex ao">
+        <div class="p-cards flex ao v-ao">
           <img
             class="p-cards-logo-ao"
             src="./assets/img/Marcas/AO.png"
@@ -604,7 +623,7 @@
           </div>
         </div>
         <!-- Producto 20 -->
-        <div class="p-cards flex ao">
+        <div class="p-cards flex ao v-ao">
           <img
             class="p-cards-logo-ao"
             src="./assets/img/Marcas/AO.png"
@@ -629,7 +648,7 @@
           </div>
         </div>
         <!-- Producto 21 -->
-        <div class="p-cards flex ao">
+        <div class="p-cards flex ao v-ao">
           <img
             class="p-cards-logo-ao"
             src="./assets/img/Marcas/AO.png"
@@ -654,8 +673,9 @@
           </div>
         </div>
         <!-- INICIO STELLA -->
+        <input type="checkbox" id="m-sa" />
         <!-- Producto 22 -->
-        <div class="p-cards-sa flex sa">
+        <div class="p-cards-sa flex sa v-sa">
           <img
             class="p-cards-logo-ao"
             src="./assets/img/Marcas/Stella.png"
@@ -680,7 +700,7 @@
           </div>
         </div>
         <!-- Producto 23 -->
-        <div class="p-cards-sa flex sa">
+        <div class="p-cards-sa flex sa v-sa">
           <img
             class="p-cards-logo-ao"
             src="./assets/img/Marcas/Stella.png"
@@ -705,7 +725,7 @@
           </div>
         </div>
         <!-- Producto 24 -->
-        <div class="p-cards-sa flex sa">
+        <div class="p-cards-sa flex sa v-sa">
           <img
             class="p-cards-logo-ao"
             src="./assets/img/Marcas/Stella.png"
@@ -730,7 +750,7 @@
           </div>
         </div>
         <!-- Producto 25 -->
-        <div class="p-cards-sa flex sa">
+        <div class="p-cards-sa flex sa v-sa">
           <img
             class="p-cards-logo-ao"
             src="./assets/img/Marcas/Stella.png"
@@ -755,7 +775,7 @@
           </div>
         </div>
         <!-- Producto 26 -->
-        <div class="p-cards-sa flex sa">
+        <div class="p-cards-sa flex sa v-sa">
           <img
             class="p-cards-logo-ao"
             src="./assets/img/Marcas/Stella.png"
@@ -780,7 +800,7 @@
           </div>
         </div>
         <!-- Producto 26 -->
-        <div class="p-cards-sa flex sa">
+        <div class="p-cards-sa flex sa v-sa">
           <img
             class="p-cards-logo-ao"
             src="./assets/img/Marcas/Stella.png"
@@ -805,7 +825,7 @@
           </div>
         </div>
         <!-- Producto 27 -->
-        <div class="p-cards-sa flex sa">
+        <div class="p-cards-sa flex sa v-sa">
           <img
             class="p-cards-logo-ao"
             src="./assets/img/Marcas/Stella.png"
@@ -830,7 +850,7 @@
           </div>
         </div>
         <!-- Producto 28 -->
-        <div class="p-cards-sa flex sa">
+        <div class="p-cards-sa flex sa v-sa">
           <img
             class="p-cards-logo-ao"
             src="./assets/img/Marcas/Stella.png"
@@ -855,8 +875,9 @@
           </div>
         </div>
         <!-- INICIO CORONA -->
+        <input type="checkbox" id="m-cor" />
         <!-- Producto 29 -->
-        <div class="p-cards flex cor">
+        <div class="p-cards flex cor v-cor">
           <img
             class="p-cards-logo"
             src="./assets/img/Marcas/Corona.png"
@@ -881,7 +902,7 @@
           </div>
         </div>
         <!-- Producto 30 -->
-        <div class="p-cards flex cor">
+        <div class="p-cards flex cor v-cor">
           <img
             class="p-cards-logo"
             src="./assets/img/Marcas/Corona.png"
@@ -906,7 +927,7 @@
           </div>
         </div>
         <!-- Producto 31 -->
-        <div class="p-cards flex cor">
+        <div class="p-cards flex cor v-cor">
           <img
             class="p-cards-logo"
             src="./assets/img/Marcas/Corona.png"
@@ -931,7 +952,7 @@
           </div>
         </div>
         <!-- Producto 32 -->
-        <div class="p-cards flex cor">
+        <div class="p-cards flex cor v-cor">
           <img
             class="p-cards-logo"
             src="./assets/img/Marcas/Corona.png"
@@ -956,7 +977,7 @@
           </div>
         </div>
         <!-- Producto 33 -->
-        <div class="p-cards flex cor">
+        <div class="p-cards flex cor v-cor">
           <img
             class="p-cards-logo"
             src="./assets/img/Marcas/Corona.png"
@@ -981,7 +1002,7 @@
           </div>
         </div>
         <!-- Producto 34 -->
-        <div class="p-cards flex cor">
+        <div class="p-cards flex cor v-cor">
           <img
             class="p-cards-logo"
             src="./assets/img/Marcas/Corona.png"
@@ -1006,7 +1027,7 @@
           </div>
         </div>
         <!-- Producto 34 -->
-        <div class="p-cards flex cor">
+        <div class="p-cards flex cor v-cor">
           <img
             class="p-cards-logo"
             src="./assets/img/Marcas/Corona.png"
@@ -1031,8 +1052,9 @@
           </div>
         </div>
         <!-- INICIO PATAGONIA -->
+        <input type="checkbox" id="m-pat" />
         <!-- Producto 35 -->
-        <div class="p-cards flex pat">
+        <div class="p-cards flex pat v-pat">
           <img
             class="p-cards-logo"
             src="./assets/img/Marcas/Patagonia.png"
@@ -1057,7 +1079,7 @@
           </div>
         </div>
         <!-- Producto 36 -->
-        <div class="p-cards flex pat">
+        <div class="p-cards flex pat v-pat">
           <img
             class="p-cards-logo"
             src="./assets/img/Marcas/Patagonia.png"
@@ -1082,7 +1104,7 @@
           </div>
         </div>
         <!-- Producto 37 -->
-        <div class="p-cards flex pat">
+        <div class="p-cards flex pat v-pat">
           <img
             class="p-cards-logo"
             src="./assets/img/Marcas/Patagonia.png"
@@ -1107,7 +1129,7 @@
           </div>
         </div>
         <!-- Producto 38 -->
-        <div class="p-cards flex pat">
+        <div class="p-cards flex pat v-pat">
           <img
             class="p-cards-logo"
             src="./assets/img/Marcas/Patagonia.png"
@@ -1132,7 +1154,7 @@
           </div>
         </div>
         <!-- Producto 39 -->
-        <div class="p-cards flex pat">
+        <div class="p-cards flex pat v-pat">
           <img
             class="p-cards-logo"
             src="./assets/img/Marcas/Patagonia.png"
