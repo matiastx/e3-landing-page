@@ -557,3 +557,142 @@ footer p {
 #m-pat:checked ~ .v-pat {
   display: flex;
 }
+
+.cart-menu {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 50%;
+  flex-direction: column;
+  padding: 15px 30px;
+  background: linear-gradient(
+    0deg,
+    rgb(42, 41, 41) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  gap: 30px;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.cart-menu h3 {
+  color: var(--bg-page);
+}
+
+.cart-product {
+  flex-direction: row;
+  width: 320px;
+  height: 150px;
+  gap: 5px;
+  border: solid 1px var(--azure);
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.cart-product img {
+  width: 100px;
+  height: 100px;
+  background: var(--bg-page);
+  border-radius: 10px;
+  margin: 0 0 0 10px;
+}
+
+.cart-p-desc {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-p-desc h4 {
+  color: var(--bg-page);
+}
+
+.cart-p-desc p {
+  color: var(--bg-page);
+}
+
+.cart-p-desc span {
+  color: var(--safety-orange);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.cart-p-cant {
+  justify-content: center;
+  align-items: center;
+  gap 5px;
+}
+
+.cart-p-cant p {
+  border: solid 1px var(--azure);
+  padding: 2px 7px;
+  border-radius: 5px;
+  margin: 0 5px;
+  color: var(--bg-page);
+  cursor: pointer;
+}
+
+.cart-p-cant span {
+  color: var(--bg-page);
+  padding: 2px 7px;
+  margin: 0 5px;
+  font-weight: 550;
+}
+
+.cart-total {
+  justify-content: space-between;
+  align-items: center;
+  gap: 70px;
+}
+
+.cart-divisor {
+  height: 3px;
+  width: 90%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.cart-total h3 {
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+.cart-total span {
+  color: var(--safety-orange);
+  background: none;
+  font-size: 25px;
+  font-weight: 600;
+
+}
+
+
+.cart-btn-add {
+  background: var(--iris);
+  border: none;
+  border-radius: 10px;
+  width: 90%;
+  padding: 10px;
+  color: var(--bg-page);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cart-btn-add:hover {
+  background: var(--azure);
+  border: solid 1px var(--bg-page);
+}
+
+#cart,
+.cart-menu {
+  display: none;
+}
+
+#cart:checked + .cart-menu {
+  display: flex;
+}
