@@ -561,8 +561,7 @@ footer p {
 .cart-menu {
   position: absolute;
   top: 80px;
-  right: 0;
-  width: 50%;
+  right: 0px;
   flex-direction: column;
   padding: 15px 30px;
   background: linear-gradient(0deg, rgb(42, 41, 41) 50%, rgba(0, 0, 0, 1) 100%);
