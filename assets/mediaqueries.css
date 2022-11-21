@@ -4,6 +4,10 @@
     flex-direction: column;
   }
 
+  .menu-h {
+    display: flex;
+  }
+
   .h-info h1,
   .h-card-info {
     display: none;
@@ -31,12 +35,7 @@
     display: none;
   }
 
-  .menu-toggle {
-    display: flex;
-    cursor: pointer;
-  }
-
-  #menu-h + .navbar-list {
+  #menu-toggle:checked ~ .navbar-list {
     display: flex;
   }
 }
@@ -44,6 +43,10 @@
 @media (max-width: 520px) {
   .nv-contacto {
     display: none;
+  }
+
+  .contact {
+    display: flex;
   }
 
   .navbar {

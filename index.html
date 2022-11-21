@@ -10,17 +10,23 @@
   </head>
   <body>
     <header>
-      <img class="logo" src="./assets/img/Ritual-vector.png" alt="Ritual" />
+      <!-- inicio de la Barra de Navegacion -->
       <nav class="navbar">
+        <!-- Logo Principal -->
+        <img class="logo" src="./assets/img/Ritual-vector.png" alt="Ritual" />
+        <!-- Checkbox del Menu Hamburguesa -->
+        <input type="checkbox" id="menu-toggle" />
+        <!-- Menu del Navbar -->
         <ul class="navbar-list">
           <li><a href="#">Inicio</a></li>
           <li><a href="#">Productos</a></li>
           <li><a href="#">Delivery</a></li>
           <li><a href="#">Clientes</a></li>
+          <li class="contact"><a href="#">Contactanos</a></li>
         </ul>
         <div class="navbar-info">
           <div class="nv-contacto">
-            <!-- <p>Contactanos</p> -->
+            <!-- Menu iconos Contactanos -->
             <div class="cont-icons">
               <ul class="list-icons-c">
                 <li>
@@ -48,16 +54,13 @@
             </div>
           </div>
         </div>
+        <!-- Boton Carro -->
         <img class="carro" src="./assets/img/cart-icon.svg" alt="Carrito" />
-        <!-- ☰ -->
-        <div class="menu-toggle">
-          <label for="menu-h">
-            <img src="./assets/img/MenuH-vector.PNG" alt="menu" />
-          </label>
-          <input type="checkbox" id="menu-h" />
-        </div>
+        <!-- ☰ Menu Hamburguesa ☰ -->
+        <label for="menu-toggle" class="menu-h">☰</label>
       </nav>
     </header>
+    <!-- INICIO DE SECCION HERO -->
     <section id="hero">
       <div class="h-card">
         <img class="h-card-img" src="./assets/img/Ritual-vector.png" alt="" />

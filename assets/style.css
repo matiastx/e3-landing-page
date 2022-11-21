@@ -36,29 +36,29 @@
   /* border: solid 1px blue; */
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  background: linear-gradient(to top, var(--ghost-white), var(--bg-page));
-  /* background-color: var(--ghost-white); */
-  height: 80px;
-  width: 100%;
-  border-bottom: solid 1px var(--bg-page);
-}
-
 .logo {
   width: 78px;
   margin: 0 20px;
 }
 
+#menu-toggle {
+  display: none;
+}
+
+.contact {
+  display: none;
+}
+
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
   height: 80px;
+  padding: 10px;
+  background: linear-gradient(to top, var(--ghost-white), var(--bg-page));
+  width: 100%;
+  border-bottom: solid 1px var(--bg-page);
 }
 
 .navbar-list {
@@ -125,7 +125,7 @@ header {
 }
 
 .carro {
-  margin: 0 10px 0 15px;
+  margin: 0 0 0 10px;
   padding: 15px 20px;
   border-radius: 5px;
   background: radial-gradient(
@@ -138,6 +138,25 @@ header {
 
 .carro:hover {
   padding: 20px 25px;
+  background: var(--azure);
+  transition: 0.2s;
+}
+
+.menu-h {
+  color: var(--bg-patagonia);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  font-weight: 600;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu-h:hover {
+  font-size: 30px;
+  color: var(--ghost-white);
   background: var(--azure);
   transition: 0.2s;
 }
@@ -253,29 +272,4 @@ body {
   font-weight: 380;
   font-family: "Oswald", sans-serif;
   color: var(--onyx);
-}
-
-.menu-toggle {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 70px;
-  display: none;
-}
-
-.menu-toggle img {
-  position: relative;
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-}
-
-.menu-toggle img:hover {
-  width: 50px;
-  height: 50px;
-  transition: 0.2s;
-}
-
-.menu-toggle input {
-  display: none;
 }
