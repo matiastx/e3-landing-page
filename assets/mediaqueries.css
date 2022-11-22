@@ -72,4 +72,13 @@
   .cart-menu {
     width: 100%;
   }
+
+  .contact-info {
+    width: 100%;
+    font-weight: 600;
+  }
+
+  .mapouter {
+    width: 95%;
+  }
 }
