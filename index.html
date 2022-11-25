@@ -18,11 +18,11 @@
         <input type="checkbox" id="menu-toggle" />
         <!-- Menu del Navbar -->
         <ul class="navbar-list">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Productos</a></li>
-          <li><a href="#">Delivery</a></li>
+          <li><a href="#hero">Inicio</a></li>
+          <li><a href="#catalogo">Marcas</a></li>
+          <li><a href="#products">Productos</a></li>
           <li><a href="#">Clientes</a></li>
-          <li class="contact"><a href="#">Contactanos</a></li>
+          <li class="contact"><a href="#contact">Contactanos</a></li>
         </ul>
         <div class="navbar-info">
           <div class="nv-contacto">
@@ -30,25 +30,28 @@
             <div class="cont-icons">
               <ul class="list-icons-c">
                 <li>
-                  <img
-                    class="logo-c"
-                    src="./assets/img/Whatsap-vector.png"
-                    alt="whatsapp"
-                  />
+                  <a href="#ct-whats"
+                    ><img
+                      class="logo-c"
+                      src="./assets/img/Whatsap-vector.png"
+                      alt="whatsapp"
+                  /></a>
                 </li>
                 <li>
-                  <img
-                    class="logo-c"
-                    src="./assets/img/Instagram-vector.png"
-                    alt="instagram"
-                  />
+                  <a href="#ct-insta"
+                    ><img
+                      class="logo-c"
+                      src="./assets/img/Instagram-vector.png"
+                      alt="instagram"
+                  /></a>
                 </li>
                 <li>
-                  <img
-                    class="logo-c"
-                    src="./assets/img/Facebook-vector.png"
-                    alt="facebook"
-                  />
+                  <a href="#ct-face"
+                    ><img
+                      class="logo-c"
+                      src="./assets/img/Facebook-vector.png"
+                      alt="facebook"
+                  /></a>
                 </li>
               </ul>
             </div>
@@ -72,7 +75,7 @@
             <div class="cart-p-desc flex">
               <h4>Producto</h4>
               <p>Precio</p>
-              <span>$1500</span>
+              <span>$680</span>
             </div>
             <div class="cart-p-cant flex">
               <p>-</p>
@@ -89,7 +92,7 @@
             <div class="cart-p-desc flex">
               <h4>Producto</h4>
               <p>Precio</p>
-              <span>$1500</span>
+              <span>$680</span>
             </div>
             <div class="cart-p-cant flex">
               <p>-</p>
@@ -106,7 +109,7 @@
             <div class="cart-p-desc flex">
               <h4>Producto</h4>
               <p>Precio</p>
-              <span>$1500</span>
+              <span>$680</span>
             </div>
             <div class="cart-p-cant flex">
               <p>-</p>
@@ -118,7 +121,7 @@
           <span class="cart-divisor"></span>
           <div class="cart-total flex">
             <h3>Total</h3>
-            <span>$4500</span>
+            <span>$2040</span>
           </div>
           <button class="cart-btn-add">Comprar</button>
         </div>
@@ -199,7 +202,7 @@
           /></label>
         </div>
       </div>
-      <h2>Click en las Marcas para ver sus Productos</h2>
+      <h2 id="products">Click en las Marcas para ver sus Productos</h2>
       <!-- Contenedor de Productos -->
       <div class="p-cards-container flex">
         <!-- Inicio de productos -->
@@ -1259,20 +1262,32 @@
                 <a class="no-point" href="#">Blvd. de los Alemanes, Córdoba</a>
               </li>
               <li>
-                <img src="./assets/img/Instagram-vector.png" alt="Instagram" />
+                <img
+                  id="ct-insta"
+                  src="./assets/img/Instagram-vector.png"
+                  alt="Instagram"
+                />
                 <a href="https://www.instagram.com/ritualexperiencias/"
                   >Ritual Experiencias en Instagram</a
                 >
               </li>
               <li>
-                <img src="./assets/img/Facebook-vector.png" alt="Facebook" />
+                <img
+                  id="ct-face"
+                  src="./assets/img/Facebook-vector.png"
+                  alt="Facebook"
+                />
                 <a
                   href="https://www.facebook.com/profile.php?id=100067727444237"
                   >Ritual Experiencias en Facebook</a
                 >
               </li>
               <li>
-                <img src="./assets/img/Whatsap-vector.png" alt="whatsapp" />
+                <img
+                  id="ct-whats"
+                  src="./assets/img/Whatsap-vector.png"
+                  alt="whatsapp"
+                />
                 <a class="no-point" href="#">351-6366748</a>
               </li>
             </ul>
