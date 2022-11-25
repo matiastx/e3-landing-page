@@ -22,6 +22,7 @@
   --bg-bud: #cc0427;
   --bg-ao: #e8e6d2;
   --bg-patagonia: #1a3c34;
+  --bg-sa: #ffffff;
   /* Bacground */
   --bg-page: #f1f1f1;
 }
@@ -238,13 +239,19 @@ body {
 }
 
 .sa {
-  background: whitesmoke;
+  background: var(--bg-sa);
+}
+
+.cor-m {
+  background: linear-gradient(0deg, #0c2340 30%, #ffffff 30%);
 }
 
 .cor {
-  background-image: url(./img/BG/BG-Corona.png);
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(
+    0deg,
+    rgba(12, 35, 64, 1) 76%,
+    rgba(255, 255, 255, 1) 76%
+  );
 }
 
 .pat {
