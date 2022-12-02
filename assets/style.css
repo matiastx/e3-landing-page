@@ -37,6 +37,16 @@
   /* border: solid 1px blue; */
 }
 
+header {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+
 .flex {
   display: flex;
   justify-content: center;
@@ -69,9 +79,11 @@
 
 .navbar-list {
   display: flex;
+  width: 300px;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
+  z-index: 2;
 }
 
 .navbar-list a {
@@ -142,11 +154,7 @@
   cursor: pointer;
 }
 
-.carro:hover {
-  padding: 20px 25px;
-  background: var(--azure);
-  transition: 0.2s;
-}
+
 
 .menu-h {
   color: var(--bg-patagonia);
@@ -158,14 +166,11 @@
   padding: 5px 15px;
   border-radius: 5px;
   cursor: pointer;
+  z-index: 1;
+  
 }
 
-.menu-h:hover {
-  font-size: 30px;
-  color: var(--ghost-white);
-  background: var(--azure);
-  transition: 0.2s;
-}
+
 
 body {
   background: var(--ghost-white);
@@ -177,7 +182,7 @@ body {
   justify-content: center;
   flex-direction: row;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 80px auto;
 }
 
 .h-card {
@@ -567,6 +572,7 @@ footer p {
 }
 
 .cart-menu {
+  z-index: 2;
   position: absolute;
   top: 80px;
   right: 0px;
@@ -574,9 +580,10 @@ footer p {
   padding: 15px 30px;
   background: linear-gradient(0deg, rgb(42, 41, 41) 50%, rgba(0, 0, 0, 1) 100%);
   gap: 30px;
-  height: 100%;
+  height: calc( 100vh - 80px )
   align-items: center;
   justify-content: flex-start;
+  scroll-
 }
 
 .cart-menu h3 {

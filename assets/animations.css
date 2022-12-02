@@ -1,0 +1,81 @@
+html {
+  scroll-padding-top: 80px;
+  scroll-behavior: smooth;
+}
+
+.overlay {
+  position: absolute;
+  top: 80px;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+  background: rgba(34, 62, 2, 0.1);
+  box-shadow: 0 15px 30px 15 rgba(35, 57, 0, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  display: none;
+}
+
+#cart:checked ~ .overlay {
+  display: block;
+}
+
+#menu-toggle:checked ~ .overlay {
+  display: block;
+}
+
+.carro {
+  transition: all 0.3 ease-out;
+}
+
+.carro:hover {
+  padding: 20px 25px;
+  background: var(--azure);
+  transition: all 0.3s ease-out;
+}
+.menu-h {
+  transition: all 0.2s ease-out;
+}
+
+.menu-h:hover {
+  font-size: 30px;
+  color: var(--ghost-white);
+  background: var(--azure);
+  transition: all 0.2s ease-out;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(100px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translatey(100px);
+  }
+  to {
+    transform: translatey(0px);
+  }
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translatey(100px);
+  }
+}
